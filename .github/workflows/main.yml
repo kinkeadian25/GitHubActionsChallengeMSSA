@@ -17,7 +17,6 @@ jobs:
       - name: Run ARM deploy
         uses: azure/arm-deploy@v1
         with:
-          subscriptionId: 5d7a4310-fcdc-421a-a9a4-22565d54b2af
           resourceGroupName: MSSAGithubActionsChallengeKinkead_group
           template: ./azuredeploy.json
           parameters: storageAccountType=Standard_LRS
