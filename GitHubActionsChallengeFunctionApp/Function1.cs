@@ -12,7 +12,7 @@ namespace GitHubActionsChallengeFunctionApp
 {
     public static class Function1
     {
-        // This function will get triggered/executed when a new message is written
+        // This function will get triggered/executed when a message is written
         [FunctionName("Function1")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
